@@ -1,18 +1,16 @@
 //Page principal na tela
 "use client"
 
-import { Adicionar } from "@/components/Adicionar";
+import { QuestionItem } from "@/components/QuestionItem";
+import { QuizComplet } from "@/components/QuizComplet";
+import { Results } from "@/components/Results";
+import { questions } from "@/data/questions";
+import { useState } from "react";
 
 
-const Page = () => {  
-  
+const Page = () => {
   return (
-
-    <div className="w-screen h-screen flex flex-col  items-center text-2xl">
-      <h1 className="text-4xl mt-5">Lista de Tarefas</h1>
-        <Adicionar />
-        
-    </div>
-  );
+     <QuizComplet />
+      );
 }
 export default Page;
